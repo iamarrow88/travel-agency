@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@400;500;600;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,6 +12,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: black;
+  @apply font-body text-base;
 }
 
 code {
@@ -22,5 +26,127 @@ code {
 }
 
 .btn {
-  @apply bg-green-template rounded-full;
+  @apply bg-green-template rounded-full font-semibold;
+}
+
+.placeholder {
+  @apply text-template-inkLight font-semibold leading-160;
+}
+
+.arrow-btn {
+  @apply w-[40px] h-[40px] border border-white rounded-full cursor-pointer flex justify-center items-center;
+}
+
+.section-title {
+  @apply font-title text-6xl font-bold leading-tight text-center;
+}
+
+.filter {
+  @apply border border-black font-semibold cursor-pointer rounded-full;
+  color: #101010;
+  line-height: 160%;
+  letter-spacing: 0.32px;
+}
+
+.link {
+  @apply font-semibold text-template-navi;
+  line-height: 160%;
+  letter-spacing: 0.32px;
+}
+
+.stars {
+  fill: #7483BD;
+  stroke: #7483BD;
+}
+
+.stars-0 {
+  stroke: #7483BD;
+  fill: transparent;
+}
+
+.trip-card {
+  /*width: 384px;*/
+  /*height: 654px;*/
+  border-radius: 48px;
+  border: 1px solid #CECACA;
+  background: #FFF;
+  box-shadow: 0 1px 24px 8px rgba(20, 20, 20, 0.08);
+}
+
+.badge {
+  @apply text-template-black font-title font-semibold;
+  line-height: 160%;
+  letter-spacing: 0.32px;
+}
+
+.card-title {
+  @apply text-template-black font-semibold font-title;
+  font-size: 1.4rem;
+  line-height: 160%;
+  letter-spacing: 0.48px;
+}
+
+.card-icons {
+  @apply flex justify-start gap-2 items-center text-template-gray font-semibold font-title;
+}
+
+.card-description {
+  height: 134px;
+  border-bottom: 1px dashed #72777A;
+}
+
+.most-popular {
+  box-shadow: 0 1px 24px 8px rgba(20, 20, 20, 0.08);
+  @apply pt-16;
+}
+
+.reason-card {
+  width: 100%;
+  height: 240px;
+  background: #FFF;
+  border: 1px solid #CECACA;
+  border-radius: 64px;
+}
+
+.reason-card-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 38.4px */
+  letter-spacing: 0.48px;
+}
+
+.review-card {
+  width: 384px;
+  height: 307px;
+  border-radius: 20px;
+  box-shadow: 0 4px 34px -12px rgba(0, 0, 0, 0.25);
+}
+
+.review-name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0.4px;
+}
+
+.review-text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  letter-spacing: 0.32px;
+}
+
+.review-more {
+  @apply review-text;
+  font-weight: 600;
+}
+
+.suggest-title {
+  width: 592px;
+  height: 384px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #101010;
+  border-radius: 64px;
+  box-shadow: 0 4px 26px 1px rgba(0, 0, 0, 0.25);
 }
