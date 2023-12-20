@@ -1,7 +1,7 @@
-function StandardButton(props) {
+function StandardButton({ slot, classNames }) {
 
   return (
-    <button className="btn">{props.slot}</button>
+    <button className={classNames}>{slot}</button>
   )
 }
 
