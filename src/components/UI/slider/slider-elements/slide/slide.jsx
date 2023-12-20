@@ -1,7 +1,7 @@
 function Slide(props){
   return (
-      <div className="w-full flex-grow">
-        <img className="w-[1440px]" src={props.src} alt={props.alt}/>
+      <div className="w-full flex-grow h-full">
+        <img className="w-[1440px] h-full object-cover" src={props.src} alt={props.alt}/>
       </div>
   )
 }
