@@ -1,5 +1,6 @@
 import SectionTitle from "../../../UI/titles/section-title/section-title";
 import SuggestTitle from "../../../UI/cards/suggest-title/suggest-title";
+import image from "./direction-sprite.png";
 
 const directions = [
   {
@@ -9,33 +10,33 @@ const directions = [
   },
   {
     "direction": "canada",
-    "imageSrc": "./usa.png",
-    "link": "https://www.google.com/search?q=usa"
+    "imageSrc": "./canada.png",
+    "link": "https://www.google.com/search?q=canada"
   },
   {
     "direction": "europe",
-    "imageSrc": "./usa.png",
-    "link": "https://www.google.com/search?q=usa"
+    "imageSrc": "./europe.png",
+    "link": "https://www.google.com/search?q=europe"
   },
   {
     "direction": "asia",
-    "imageSrc": "./usa.png",
-    "link": "https://www.google.com/search?q=usa"
+    "imageSrc": "./asia.png",
+    "link": "https://www.google.com/search?q=asia"
   },
   {
     "direction": "latin america",
-    "imageSrc": "./usa.png",
-    "link": "https://www.google.com/search?q=usa"
+    "imageSrc": "./latin-america.png",
+    "link": "https://www.google.com/search?q=latin+america"
   },
   {
     "direction": "australia",
-    "imageSrc": "./usa.png",
-    "link": "https://www.google.com/search?q=usa"
+    "imageSrc": "./australia.png",
+    "link": "https://www.google.com/search?q=australia"
   },
   {
     "direction": "africa",
-    "imageSrc": "./usa.png",
-    "link": "https://www.google.com/search?q=usa"
+    "imageSrc": "./africa.png",
+    "link": "https://www.google.com/search?q=africa"
   },
   {
     "direction": "View all places >",
@@ -50,7 +51,7 @@ function Directions(props){
   const titles = directions.map(direction => {
     key += 1;
     return (
-        <SuggestTitle name={direction.direction} key={key} />
+        <SuggestTitle name={direction.direction} key={key} image={image}/>
     )
   })
   return (
