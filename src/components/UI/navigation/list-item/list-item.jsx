@@ -1,7 +1,7 @@
-function ListItem(props){
+function ListItem({ link, itemName, classNames }){
   return (
-      <li className="whitespace-nowrap cursor-pointer">
-        <a href={props.link}>{props.itemName}</a>
+      <li className={`whitespace-nowrap cursor-pointer ${classNames}`}>
+        <a href={link}>{itemName}</a>
       </li>
   )
 }

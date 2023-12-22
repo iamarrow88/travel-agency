@@ -1,11 +1,11 @@
-import Nav from "../../UI/navigation/nav/nav";
+import HeaderNav from "../../UI/navigation/headerNav/headerNav";
 import SimpleSearchInput from "../../UI/inputs/simple-search/simple-search-input";
 
 function Header(){
   const itemNames = ['Destinations', 'Deals', 'Travel Styles', 'About', 'Get Inspired'];
   return (
       <header className="max-w-screen-xl mx-auto px-8 py-6 h-32 flex justify-start items-end">
-        <Nav itemNames={itemNames}/>
+        <HeaderNav itemNames={itemNames}/>
 
         <SimpleSearchInput />
 

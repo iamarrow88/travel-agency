@@ -1,7 +1,7 @@
-function Logo(props){
+function Logo({ link, classNames}){
 
-  return <div className="h-14 w-24 bg-green-300 cursor-pointer">
-    <a href={props.link} className="logo__link flex justify-center items-center text-red-700 w-full h-full">
+  return <div className={`${classNames} bg-green-300 cursor-pointer`}>
+    <a href={link} className="logo__link flex justify-center items-center text-red-700 w-full h-full">
       logo
     </a>
   </div>

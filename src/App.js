@@ -8,6 +8,7 @@ import Reviews from "./components/blocks/home/reviews/reviews";
 import Directions from "./components/blocks/home/directions/directions";
 import MobileApps from "./components/blocks/home/mobile-apps/mobile-apps";
 import Subscribe from "./components/blocks/home/subscribe/subscribe";
+import Footer from "./components/layouts/footer/footer";
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
           <Directions />
           <MobileApps />
           <Subscribe />
+
+          <Footer />
         </main>
       </div>
   );

@@ -18,6 +18,7 @@ module.exports = {
           "black": "#101010",
           "gray": "#808080",
           "skyDark": "#979C9E",
+          "footerLinks": "#9D9595"
         }
       },
       fill: {

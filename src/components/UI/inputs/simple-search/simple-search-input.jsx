@@ -4,7 +4,7 @@ function SimpleSearchInput(props) {
         <input
             type="text"
             placeholder={props.placeholder}
-            className="border-skyDark shadow-md border w-[339px] h-[48px] rounded-full"
+            className="border-skyDark shadow-md border w-[339px] h-[48px] rounded-full outline-none pl-6 py-3"
         />
 
         <span className="absolute top-1 right-1 bg-green-template rounded-full w-10 h-10 flex justify-center items-center hover:cursor-pointer">
