@@ -16,7 +16,8 @@ module.exports = {
           "inkLight": "#6C7072",
           "navi": "#7483BD",
           "black": "#101010",
-          "gray": "#808080"
+          "gray": "#808080",
+          "skyDark": "#979C9E",
         }
       },
       fill: {

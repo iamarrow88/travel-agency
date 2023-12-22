@@ -7,6 +7,7 @@ import Why from "./components/blocks/home/why/why";
 import Reviews from "./components/blocks/home/reviews/reviews";
 import Directions from "./components/blocks/home/directions/directions";
 import MobileApps from "./components/blocks/home/mobile-apps/mobile-apps";
+import Subscribe from "./components/blocks/home/subscribe/subscribe";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Reviews />
           <Directions />
           <MobileApps />
+          <Subscribe />
         </main>
       </div>
   );
