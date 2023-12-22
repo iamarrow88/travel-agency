@@ -1,8 +1,6 @@
 import SectionTitle from "../../../UI/titles/section-title/section-title";
 import TripCard from "../../../UI/cards/trip-card/trip-card";
 import barcelona from "./barcelona.png";
-import yellowstone from "./yellowstone.png";
-import scandinavia from "./scandinavia.png";
 
 const incomingData = [
   {
@@ -64,7 +62,7 @@ function Recent(props){
     <section className="recent">
       <div className="container relative pb-[129px] px-[40px]">
         <SectionTitle title={"Recently viewed trips"} classNames="mb-16"/>
-        <a href="#" className="absolute top-0 right-0 link">View all trips</a>
+        <a href="https://google.com" className="absolute top-0 right-0 link">View all trips</a>
 
         <div className="cards-wrapper grid grid-cols-recentCards gap-8 w-full">
           {cards}
