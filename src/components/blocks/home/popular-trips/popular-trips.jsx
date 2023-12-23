@@ -4,32 +4,9 @@ import TripCard from "../../../UI/cards/trip-card/trip-card";
 import tripImage from "../../../../images/most-popular/europe.png"
 import Filter from "../../../UI/button/filter/filter";
 
-const data = [
-  {
-    "name": "europe",
-    "title": "European whirl",
-    "minPrice": 2303,
-    "rate": 5,
-    "tripDuration": 18,
-    "placesCount": 32,
-    "countries": 10,
-    "description": "Dreaming of your European adventure, but don't know where to start? Welcome to the European Whirl.",
-    "imageSrc": "./assets/images/most-popular/europe.webp"
-  },
-  {
-    "name": "greek",
-    "title": "Greek Island Hopping",
-    "minPrice": 1900,
-    "rate": 5,
-    "tripDuration": 11,
-    "placesCount": 5,
-    "countries": 1,
-    "description": "You'll be living your best Greek island life on this sun, sea & culture-rich trip in Mykonos, Paros, Santorini, Ios & Athens. Stopping in at each of Greece's most popular islands.",
-    "imageSrc": "./assets/images/most-popular/greek.webp"
-  },
-]
 
-function PopularTrips(){
+
+function PopularTrips({ data }){
   let key = -1;
 
   const cards = data.map(tripsData => {
