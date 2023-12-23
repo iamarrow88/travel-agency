@@ -1,8 +1,8 @@
 import Icon from "../../icons/icon/icon";
 
-function AppButton({ id, slot1, slot2 }){
+function AppButton({ id, slot1, slot2, link }){
   return (
-      <div className="app-button rounded-md flex justify-start items-center gap-2 px-5">
+      <a href={link} className="app-button rounded-md flex justify-start items-center gap-2 px-5 cursor-pointer">
         <div className="flex justify-center items-center w-8 h-full">
           <Icon id={id} classNames="fill-white stroke-white w-full h-8" />
         </div>
@@ -11,7 +11,7 @@ function AppButton({ id, slot1, slot2 }){
           <span>{slot1}</span>
           <span className="font-semibold text-xl">{slot2}</span>
         </div>
-      </div>
+      </a>
   )
 }
 

@@ -54,6 +54,24 @@ const directions = [
   },
 ]
 
+const mobileAppDescription = 'All your travel plans, in one place.You handle the booking.Access reservations, maps, and more on your favorite device!View trending destinations. Discover popular trips. Listen to your heart. Experience the world.Find or create your perfect trip. Meet fellow travellers. Experience different cultures. Create unforgettable memories.Keep up-to-date with active trips, view your favourites, visit previous adventures. Managing a trip has never been easier.'
+
+const mobileAppsButtons = [
+  {
+    svgID: 'apple-logo',
+    slot1: 'Download on the',
+    slot2: 'App Store',
+    link: 'https://www.google.com/search?q=app+store',
+  },
+  {
+    svgID: 'google-play',
+    slot1: 'Get it on',
+    slot2: 'Google Play',
+    link: 'https://www.google.com/search?q=Google+Play',
+  }
+]
+
+
 function App() {
   return (
       <div className="App">
@@ -66,9 +84,8 @@ function App() {
           <PopularTrips />
           <Why />
           <Reviews />
-          <Directions />
-          <MobileApps />
           <Directions directionsArray={directions}/>
+          <MobileApps sectionTitle="Try our Travel Together app" description={mobileAppDescription} buttonsData={mobileAppsButtons}/>
           <Subscribe />
 
           <Footer />
