@@ -11,6 +11,49 @@ import Subscribe from "./components/blocks/home/subscribe/subscribe";
 import Footer from "./components/layouts/footer/footer";
 
 
+const directions = [
+  {
+    "title": "USA",
+    "imageSrc": "./usa.png",
+    "link": "https://www.google.com/search?q=usa"
+  },
+  {
+    "title": "Canada",
+    "imageSrc": "./canada.png",
+    "link": "https://www.google.com/search?q=canada"
+  },
+  {
+    "title": "Europe",
+    "imageSrc": "./europe.png",
+    "link": "https://www.google.com/search?q=europe"
+  },
+  {
+    "title": "Asia",
+    "imageSrc": "./asia.png",
+    "link": "https://www.google.com/search?q=asia"
+  },
+  {
+    "title": "Latin America",
+    "imageSrc": "./latin-america.png",
+    "link": "https://www.google.com/search?q=latin+america"
+  },
+  {
+    "title": "Australia",
+    "imageSrc": "./australia.png",
+    "link": "https://www.google.com/search?q=australia"
+  },
+  {
+    "title": "Africa",
+    "imageSrc": "./africa.png",
+    "link": "https://www.google.com/search?q=africa"
+  },
+  {
+    "title": "View all places >",
+    "imageSrc": "",
+    "link": "https://www.google.com/search?q=usa"
+  },
+]
+
 function App() {
   return (
       <div className="App">
@@ -25,6 +68,7 @@ function App() {
           <Reviews />
           <Directions />
           <MobileApps />
+          <Directions directionsArray={directions}/>
           <Subscribe />
 
           <Footer />
