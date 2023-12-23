@@ -1,6 +1,6 @@
-function Filter({ title, classNames }){
+function Filter({ title, classNames, link }){
   return (
-      <button className={`${classNames} filter`}>{title}</button>
+      <a href={link} className={`${classNames} filter`}>{title}</a>
   )
 }
 
