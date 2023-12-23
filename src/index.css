@@ -95,9 +95,9 @@ code {
   border-bottom: 1px dashed #72777A;
 }
 
-.most-popular {
+.most-popular__container {
+  width: 100%;
   box-shadow: 0 1px 24px 8px rgba(20, 20, 20, 0.08);
-  @apply pt-16;
 }
 
 .reason-card {
