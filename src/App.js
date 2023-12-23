@@ -160,7 +160,23 @@ const recentTripsData = [
   },
 ]
 
-
+const reviewsData = [
+  {
+    "name": "Melanie L.",
+    "text": "Dreaming of your European adventure, but don't know where to start? Welcome to the European Whirl. .",
+    "avatarSrc": "/public/assets/images/reviews/melanie.webp",
+  },
+  {
+    "name": "Louis Jabeth",
+    "text": "Dreaming of your European adventure, but don't know where to start? Welcome to the European Whirl. .",
+    "avatarSrc": "/public/assets/images/reviews/lois.webp",
+  },
+  {
+    "name": "Robin Doe",
+    "text": "Dreaming of your European adventure, but don't know where to start? Welcome to the European Whirl. .",
+    "avatarSrc": "/public/assets/images/reviews/robin.webp",
+  },
+]
 
 function App() {
   return (
@@ -173,7 +189,7 @@ function App() {
           <Recent recentTripsData={recentTripsData} sectionTitle="Recently viewed trips" bottomBtnText="View all trips" bottomBtnLink="/recent"/>
           <PopularTrips data={popularTripsData} sectionTitle="Most popular trips" allBtnText="All trips" allBtnLink="/allTrips"/>
           <Why />
-          <Reviews />
+          <Reviews reviews={reviewsData} sectionTitle="What travellers are saying" allBtnText="All Rewiews" allBtnLink="/reviews"/>
           <Directions directionsArray={directions}/>
           <MobileApps sectionTitle="Try our Travel Together app" description={mobileAppDescription} buttonsData={mobileAppsButtons}/>
           <Subscribe />

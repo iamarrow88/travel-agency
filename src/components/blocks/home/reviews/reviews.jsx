@@ -3,25 +3,9 @@ import ReviewCard from "../../../UI/cards/review-card/review-card";
 import RoundIndicator from "../../../UI/slider/slider-elements/round-indicator/round-indicator";
 import Filter from "../../../UI/button/filter/filter";
 
-const reviews = [
-  {
-    "name": "Melanie L.",
-    "text": "Dreaming of your European adventure, but don't know where to start? Welcome to the European Whirl. .",
-    "avatarSrc": "/public/assets/images/reviews/melanie.webp",
-  },
-  {
-    "name": "Louis Jabeth",
-    "text": "Dreaming of your European adventure, but don't know where to start? Welcome to the European Whirl. .",
-    "avatarSrc": "/public/assets/images/reviews/lois.webp",
-  },
-  {
-    "name": "Robin Doe",
-    "text": "Dreaming of your European adventure, but don't know where to start? Welcome to the European Whirl. .",
-    "avatarSrc": "/public/assets/images/reviews/robin.webp",
-  },
-]
 
-function Reviews(props){
+
+function Reviews({ reviews, sectionTitle, allBtnText, allBtnLink }){
   let key = -1;
   const cards = reviews.map(review => {
     key += 1;
@@ -36,7 +20,7 @@ function Reviews(props){
   return (
       <section className="reviews">
         <div className="container">
-          <SectionTitle title="What travellers are saying" classNames="mb-32" />
+          <SectionTitle title={sectionTitle} classNames="mb-32" />
 
           <div className="carousel-wrapper relative w-full mb-16">
             <div className="relative background w-[748px] h-[454px] bg-template-black rounded-6xl mx-auto">
@@ -52,7 +36,7 @@ function Reviews(props){
             </div>
           </div>
 
-          <Filter title="All Rewiews" classNames="py-4 px-12 mx-auto block review-more"/>
+          <Filter title={allBtnText} link={allBtnLink} classNames="py-4 px-12 mx-auto block review-more"/>
         </div>
       </section>
   )
