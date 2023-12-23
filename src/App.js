@@ -146,7 +146,7 @@ function App() {
           <Main mainTitle="DREAMY SUMMER HOLIDAYS" buttonTitle="See trips"/>
           <PopularSearches titlesList={filtersList}/>
           <Recent recentTripsData={recentTripsData} sectionTitle="Recently viewed trips" bottomBtnText="View all trips" bottomBtnLink="/recent"/>
-          <PopularTrips data={popularTripsData}/>
+          <PopularTrips data={popularTripsData} sectionTitle="Most popular trips" allBtnText="All trips" allBtnLink="/allTrips"/>
           <Why />
           <Reviews />
           <Directions directionsArray={directions}/>

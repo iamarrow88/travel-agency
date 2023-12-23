@@ -6,7 +6,7 @@ import Filter from "../../../UI/button/filter/filter";
 
 
 
-function PopularTrips({ data }){
+function PopularTrips({ data, sectionTitle, allBtnText, allBtnLink }){
   let key = -1;
 
   const cards = data.map(tripsData => {
@@ -29,7 +29,7 @@ function PopularTrips({ data }){
       <section className="most-popular pt-16">
         <div className="container most-popular__container relative pt-16 pb-32">
 
-          <SectionTitle title="Most popular trips" classNames="mb-20"/>
+          <SectionTitle title={sectionTitle} classNames="mb-20"/>
 
           <div className="buttons flex justify-end gap-2 absolute top-6 right-16">
              <ArrowButton id="arrow-right" svgClassNames="fill-white w-3 h-3 flex justify-center items-center" classNames="fill-white bg-template-ultraLightGray rounded-full w-8 h-8 rotate-180 flex justify-center items-center cursor-pointer" />
@@ -40,7 +40,7 @@ function PopularTrips({ data }){
             {cards}
           </div>
 
-          <Filter title="All trips" classNames="block mx-auto px-16 py-4"/>
+          <Filter title={allBtnText} classNames="block mx-auto px-16 py-4" link={allBtnLink}/>
 
         </div>
       </section>
