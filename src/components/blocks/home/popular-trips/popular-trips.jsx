@@ -40,7 +40,7 @@ function PopularTrips({ data, sectionTitle, allBtnText, allBtnLink }){
             {cards}
           </div>
 
-          <Filter title={allBtnText} classNames="block mx-auto px-16 py-4" link={allBtnLink}/>
+          <Filter title={allBtnText} classNames="block mx-auto text-center py-4 w-52" link={allBtnLink}/>
 
         </div>
       </section>
