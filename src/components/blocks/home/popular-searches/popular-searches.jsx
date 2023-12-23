@@ -1,19 +1,22 @@
 import SectionTitle from "../../../UI/titles/section-title/section-title";
 import Filter from "../../../UI/button/filter/filter";
 
-function PopularSearches (props) {
+function PopularSearches ({ titlesList }) {
+  let key = -1;
+  const filters = titlesList.map(title => {
+    key += 1;
+    return (
+        <Filter title={title} classNames="px-6 py-3" key={key}/>
+    )
+  })
+
   return (
     <section className="popular-searches">
       <div className="container pt-[128px] pb-[140px] px-[40px]">
         <SectionTitle title={"Popular searches"} classNames="mb-16"/>
 
         <div className="filters w-full flex justify-between">
-          <Filter title="Trips under 2 weeks" classNames="px-6 py-3"/>
-          <Filter title="Best-Selling trips" classNames="px-6 py-3"/>
-          <Filter title="Best-Selling trips" classNames="px-6 py-3"/>
-          <Filter title="National parks USA" classNames="px-6 py-3"/>
-          <Filter title="Trips under 800$" classNames="px-6 py-3"/>
-          <Filter title="Scandinavian trio" classNames="px-6 py-3"/>
+          {filters}
         </div>
       </div>
     </section>

@@ -72,6 +72,8 @@ const mobileAppsButtons = [
 ]
 
 
+const filtersList = ["Trips under 2 weeks", "Best-Selling trips", "Best-Selling trips", "National parks USA", "Trips under 800$", "Scandinavian trio",]
+
 function App() {
   return (
       <div className="App">
@@ -79,7 +81,7 @@ function App() {
 
         <main>
           <Main mainTitle="DREAMY SUMMER HOLIDAYS" buttonTitle="See trips"/>
-          <PopularSearches />
+          <PopularSearches titlesList={filtersList}/>
           <Recent />
           <PopularTrips />
           <Why />
