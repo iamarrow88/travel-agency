@@ -178,6 +178,39 @@ const reviewsData = [
   },
 ]
 
+const reasonsTitlesData = [
+  {
+    "svgID": "globe",
+    "title": "Diverse Destinations",
+    "description": "Richly varied landscapes, luxury accommodation Travel.",
+  },
+  {
+    "svgID": "dollar-coin",
+    "title": "Value for Money",
+    "description": "Richly varied landscapes, luxury accommodation Travel.",
+  },
+  {
+    "svgID": "pin",
+    "title": "Beautiful Places",
+    "description": "Richly varied landscapes, luxury accommodation Travel.",
+  },
+  {
+    "svgID": "calendar-check",
+    "title": "Fast Booking",
+    "description": "Richly varied landscapes, luxury accommodation Travel.",
+  },
+  {
+    "svgID": "heart",
+    "title": "Passionate Travel",
+    "description": "Richly varied landscapes, luxury accommodation Travel.",
+  },
+  {
+    "svgID": "team",
+    "title": "Support Team",
+    "description": "Richly varied landscapes, luxury accommodation Travel.",
+  },
+]
+
 function App() {
   return (
       <div className="App">
@@ -188,7 +221,7 @@ function App() {
           <PopularSearches linksArray={filtersList}/>
           <Recent recentTripsData={recentTripsData} sectionTitle="Recently viewed trips" bottomBtnText="View all trips" bottomBtnLink="/recent"/>
           <PopularTrips data={popularTripsData} sectionTitle="Most popular trips" allBtnText="All trips" allBtnLink="/allTrips"/>
-          <Why />
+          <Why reasons={reasonsTitlesData} sectionTitle="Why choose Travel Together"/>
           <Reviews reviews={reviewsData} sectionTitle="What travellers are saying" allBtnText="All Rewiews" allBtnLink="/reviews"/>
           <Directions directionsArray={directions}/>
           <MobileApps sectionTitle="Try our Travel Together app" description={mobileAppDescription} buttonsData={mobileAppsButtons}/>
