@@ -211,6 +211,64 @@ const reasonsTitlesData = [
   },
 ]
 
+const footerLinksData = [
+      [
+        {
+          title: "About us",
+          link: false
+        },
+        {
+          title: "About Travel Together",
+          link: "/about"
+        },
+        {
+          title: "Contact us",
+          link: "/contacts"
+        },
+        {
+          title: "Features",
+          link: "/features"
+        },
+        {
+          title: "Careers",
+          link: "/career"
+        }
+      ],
+      [
+        {
+          title: "Resources",
+          link: false
+        },
+        {
+          title: "Help center",
+          link: "/help"
+        },
+        {
+          title: "Blog",
+          link: "/blog"
+        },
+        {
+          title: "Partnership",
+          link: "/partners"
+        }
+      ],
+      [
+        {
+          title: "Get in touch",
+          link: false
+        },
+        {
+          title: "Question or Feedback?",
+          link: "/message"
+        },
+        {
+          title: "We’d love to hear from you",
+          link: "/contacts"
+        }
+      ]
+    ];
+
+
 function App() {
   return (
       <div className="App">
@@ -227,7 +285,7 @@ function App() {
           <MobileApps sectionTitle="Try our Travel Together app" description={mobileAppDescription} buttonsData={mobileAppsButtons}/>
           <Subscribe sectionTitle="Subscribe to our newsletter" inputPlaceholder="Enter your Email"/>
 
-          <Footer />
+          <Footer linksData={footerLinksData}/>
         </main>
       </div>
   );

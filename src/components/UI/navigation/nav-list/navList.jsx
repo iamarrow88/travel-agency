@@ -1,14 +1,20 @@
 import ListItem from "../list-item/list-item";
 
-function NavList({namesArray, linksArray}){
+function NavList({ linksArray }){
 
   let key = -1;
 
-  const listItems = namesArray.map((itemName, index) => {
+  const listItems = linksArray.map(line => {
     key += 1;
-    return (
-        <ListItem itemName={itemName} link={linksArray[index]} classNames="text-template-footerLinks" key={key} />
-    )
+    if(line.link){
+      return (
+          <ListItem itemName={line.title} link={line.link} classNames="text-template-footerLinks" key={key} />
+      )
+    } else {
+      return (
+          <ListItem itemName={line.title} classNames="text-xl font-black leading-8 text-white mb-2 cursor-default" key={key} />
+      )
+    }
   })
   return (
       <ol className="flex flex-col gap-2 items-start">
