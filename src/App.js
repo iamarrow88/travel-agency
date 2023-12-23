@@ -72,7 +72,32 @@ const mobileAppsButtons = [
 ]
 
 
-const filtersList = ["Trips under 2 weeks", "Best-Selling trips", "Best-Selling trips", "National parks USA", "Trips under 800$", "Scandinavian trio"]
+const filtersList = [
+  {
+    title: "Trips under 2 weeks",
+    link: "/trips"
+  },
+  {
+    title: "Best-Selling trips",
+    link: "/trips"
+  },
+  {
+    title: "Best-Selling trips",
+    link: "/trips"
+  },
+  {
+    title: "National parks US",
+    link: "/trips"
+  },
+  {
+    title: "Trips under 800$",
+    link: "/trips"
+  },
+  {
+    title: "Scandinavian trio",
+    link: "/trips"
+  }
+  ]
 
 const popularTripsData = [
   {
@@ -144,7 +169,7 @@ function App() {
 
         <main>
           <Main mainTitle="DREAMY SUMMER HOLIDAYS" buttonTitle="See trips"/>
-          <PopularSearches titlesList={filtersList}/>
+          <PopularSearches linksArray={filtersList}/>
           <Recent recentTripsData={recentTripsData} sectionTitle="Recently viewed trips" bottomBtnText="View all trips" bottomBtnLink="/recent"/>
           <PopularTrips data={popularTripsData} sectionTitle="Most popular trips" allBtnText="All trips" allBtnLink="/allTrips"/>
           <Why />

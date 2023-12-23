@@ -1,12 +1,12 @@
 import SectionTitle from "../../../UI/titles/section-title/section-title";
 import Filter from "../../../UI/button/filter/filter";
 
-function PopularSearches ({ titlesList }) {
+function PopularSearches ({ linksArray }) {
   let key = -1;
-  const filters = titlesList.map(title => {
+  const filters = linksArray.map(data => {
     key += 1;
     return (
-        <Filter title={title} classNames="px-6 py-3" key={key}/>
+        <Filter title={data.title} link={data.link} classNames="px-6 py-3" key={key}/>
     )
   })
 
