@@ -192,7 +192,7 @@ function App() {
           <Reviews reviews={reviewsData} sectionTitle="What travellers are saying" allBtnText="All Rewiews" allBtnLink="/reviews"/>
           <Directions directionsArray={directions}/>
           <MobileApps sectionTitle="Try our Travel Together app" description={mobileAppDescription} buttonsData={mobileAppsButtons}/>
-          <Subscribe />
+          <Subscribe sectionTitle="Subscribe to our newsletter" inputPlaceholder="Enter your Email"/>
 
           <Footer />
         </main>

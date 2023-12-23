@@ -1,9 +1,9 @@
-function SimpleSearchInput(props) {
+function SimpleSearchInput({ placeholder }) {
   return (
       <div className="input-wrapper relative flex items-center mr-6">
         <input
             type="text"
-            placeholder={props.placeholder}
+            placeholder={placeholder}
             className="border-skyDark shadow-md border w-[339px] h-[48px] rounded-full outline-none pl-6 py-3"
         />
 
