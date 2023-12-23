@@ -78,7 +78,7 @@ function App() {
         <Header/>
 
         <main>
-          <Main />
+          <Main mainTitle="DREAMY SUMMER HOLIDAYS" buttonTitle="See trips"/>
           <PopularSearches />
           <Recent />
           <PopularTrips />
