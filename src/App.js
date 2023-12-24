@@ -10,6 +10,29 @@ import MobileApps from "./components/blocks/home/mobile-apps/mobile-apps";
 import Subscribe from "./components/blocks/home/subscribe/subscribe";
 import Footer from "./components/layouts/footer/footer";
 
+const headerLinks = [
+  {
+    title: "Destinations",
+    link: "/destinations"
+  },
+  {
+    title: "Deals",
+    link: "/deals"
+  },
+  {
+    title: "Travel Styles",
+    link: "/travel-styles"
+  },
+  {
+    title: "About",
+    link: "/about"
+  },
+  {
+    title: "Get Inspired",
+    link: "/popular"
+  }
+];
+
 
 const directions = [
   {
@@ -272,7 +295,7 @@ const footerLinksData = [
 function App() {
   return (
       <div className="App">
-        <Header/>
+        <Header links={headerLinks} phoneNumber="00 41 22 626 1692"/>
 
         <main>
           <Main mainTitle="DREAMY SUMMER HOLIDAYS" buttonTitle="See trips"/>

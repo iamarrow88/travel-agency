@@ -22,7 +22,12 @@ code {
 }
 
 .container {
-  @apply w-[1440px] mx-auto;
+  @apply max-w-[1440px] mx-auto;
+}
+
+.header__container {
+  @apply px-20 py-6 mx-auto h-full flex;
+  /*grid-template-columns: 59% 30% 11%;*/
 }
 
 .btn {

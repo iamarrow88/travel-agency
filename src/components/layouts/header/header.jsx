@@ -1,15 +1,17 @@
 import HeaderNav from "../../UI/navigation/headerNav/headerNav";
 import SimpleSearchInput from "../../UI/inputs/simple-search/simple-search-input";
 
-function Header(){
-  const itemNames = ['Destinations', 'Deals', 'Travel Styles', 'About', 'Get Inspired'];
+function Header({ links, phoneNumber }){
+  const hrefTel = "tel:" + phoneNumber.split(" ").join('');
+
   return (
-      <header className="max-w-screen-xl mx-auto px-8 py-6 h-32 flex justify-start items-end">
-        <HeaderNav itemNames={itemNames}/>
+      <header className="h-32">
+        <div className="container header__container">
+          <HeaderNav links={links}/>
 
-        <SimpleSearchInput />
+          <SimpleSearchInput classNames="mr-6 w-[339px] h-[48px]" placeholder="Find your adventure"/>
 
-        <div className="flex flex-wrap gap-1 w-40 h-14 font-bold">
+          <div className="flex flex-wrap gap-1 w-40 h-14 font-bold">
           <span className="w-6 block">
             <svg className="w-full" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24"
                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -18,9 +20,10 @@ function Header(){
             </svg>
           </span>
 
-          <span>24/7 Support</span>
+            <span>24/7 Support</span>
 
-          <a href="tel:0041226261692">00 41 22 626 1692</a>
+            <a href={hrefTel}>{phoneNumber}</a>
+          </div>
         </div>
       </header>
   )
