@@ -19,7 +19,7 @@ function Directions({ directionsArray }){
 
           <SectionTitle title="Where are we go" classNames="mb-12" />
 
-          <div className="titles flex flex-wrap gap-8">
+          <div className="titles flex flex-wrap justify-center gap-8">
             {titles}
           </div>
 
