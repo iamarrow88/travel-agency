@@ -36,7 +36,7 @@ function Reviews({ reviews, sectionTitle, allBtnText, allBtnLink }){
             </div>
           </div>
 
-          <Filter title={allBtnText} link={allBtnLink} classNames="py-4 px-12 mx-auto block review-more"/>
+          <Filter title={allBtnText} link={allBtnLink} classNames="py-4 px-10 mx-auto block review-more w-48 text-center"/>
         </div>
       </section>
   )
