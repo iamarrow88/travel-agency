@@ -9,7 +9,7 @@ function Main({ mainTitle, buttonTitle }){
       <div className="container relative w-full h-full">
         <div className="content absolute top-0 left-0 w-full h-full z-10 pt-40 text-center">
           <h1 className={`font-title text-6xl text-white font-black mb-16`}>{title}</h1>
-          <StandardButton slot={buttonTitle} classNames="btn py-2 px-32 mb-40 text-2xl"/>
+          <StandardButton slot={buttonTitle} classNames="btn py-2 px-32 mb-40 text-2xl relative z-30"/>
 
           <FiltersSearch/>
         </div>
