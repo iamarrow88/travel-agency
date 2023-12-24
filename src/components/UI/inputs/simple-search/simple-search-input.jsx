@@ -1,10 +1,10 @@
-function SimpleSearchInput({ placeholder }) {
+function SimpleSearchInput({ placeholder, classNames }) {
   return (
-      <div className="input-wrapper relative flex items-center mr-6">
+      <div className={`${classNames} input-wrapper relative flex items-center`}>
         <input
             type="text"
             placeholder={placeholder}
-            className="border-skyDark shadow-md border w-[339px] h-[48px] rounded-full outline-none pl-6 py-3"
+            className="border-skyDark shadow-md border rounded-full outline-none pl-6 py-3 w-full h-full"
         />
 
         <span className="absolute top-1 right-1 bg-green-template rounded-full w-10 h-10 flex justify-center items-center hover:cursor-pointer">
