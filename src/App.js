@@ -301,7 +301,7 @@ function App() {
           <Main mainTitle="DREAMY SUMMER HOLIDAYS" buttonTitle="See trips"/>
           <PopularSearches linksArray={filtersList}/>
           <Recent recentTripsData={recentTripsData} sectionTitle="Recently viewed trips" bottomBtnText="View all trips" bottomBtnLink="/recent"/>
-          <PopularTrips data={popularTripsData} sectionTitle="Most popular trips" allBtnText="All trips" allBtnLink="/allTrips"/>
+          <PopularTrips data={popularTripsData} sectionTitle="Most popular trips" allBtnText="All trips" allBtnLink="/all-trips"/>
           <Why reasons={reasonsTitlesData} sectionTitle="Why choose Travel Together"/>
           <Reviews reviews={reviewsData} sectionTitle="What travellers are saying" allBtnText="All Rewiews" allBtnLink="/reviews"/>
           <Directions directionsArray={directions}/>
