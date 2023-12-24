@@ -15,11 +15,11 @@ function MainSlider(props){
         </div>
       </div>
       <div className="content absolute top-0 left-0 w-full h-full pt-[309px] pb-20 flex flex-col justify-between">
-        <div className="buttons w-11/12 mx-auto flex justify-between">
+        <div className="buttons w-11/12 mx-auto flex justify-between relative z-20">
 
           <ArrowButton id='arrow-right' classNames={"arrow-btn top-[309px] left-[72px]"} svgClassNames="w-3 h-3 rotate-180"/>
           <div></div>
-          <ArrowButton id='arrow-right' svgClassNames="w-3 h-3 rotate-0" classNames={"arrow-btn top-[309px] right-[72px]"}/>
+          <ArrowButton id='arrow-right' classNames="arrow-btn top-[309px] right-[72px]" svgClassNames="w-3 h-3 rotate-0"/>
 
 
         </div>
