@@ -10,6 +10,8 @@ import MobileApps from "./components/blocks/home/mobile-apps/mobile-apps";
 import Subscribe from "./components/blocks/home/subscribe/subscribe";
 import Footer from "./components/layouts/footer/footer";
 
+import usa from "./images/directions/usa.jpg";
+
 const headerLinks = [
   {
     title: "Destinations",
@@ -37,7 +39,7 @@ const headerLinks = [
 const directions = [
   {
     "title": "USA",
-    "imageSrc": "./usa.png",
+    "imageSrc": usa,
     "link": "https://www.google.com/search?q=usa"
   },
   {

@@ -19,7 +19,7 @@ function MobileApps({ sectionTitle, description, buttonsData }) {
               {buttons}
             </div>
           </div>
-          <img src="/public/assets/images/travel-apps.webp" alt="mobile apps help you"/>
+          <img src="./travel-apps.webp" alt="mobile apps help you"/>
         </div>
       </section>
   )
