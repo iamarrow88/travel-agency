@@ -11,6 +11,7 @@ import Subscribe from "./components/blocks/home/subscribe/subscribe";
 import Footer from "./components/layouts/footer/footer";
 
 import usa from "./images/directions/usa.jpg";
+/*import canada from "./images/directions/canada.jpg";*/
 
 const headerLinks = [
   {
@@ -44,7 +45,7 @@ const directions = [
   },
   {
     "title": "Canada",
-    "imageSrc": "./canada.png",
+    "imageSrc": 'canada',
     "link": "https://www.google.com/search?q=canada"
   },
   {

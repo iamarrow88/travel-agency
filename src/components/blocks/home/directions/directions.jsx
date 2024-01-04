@@ -1,8 +1,5 @@
 import SectionTitle from "../../../UI/titles/section-title/section-title";
 import SuggestTitle from "../../../UI/cards/suggest-title/suggest-title";
-import image from "./direction-sprite.png";
-
-
 
 function Directions({ directionsArray }){
   let key = -1;
@@ -10,7 +7,7 @@ function Directions({ directionsArray }){
   const titles = directionsArray.map(direction => {
     key += 1;
     return (
-        <SuggestTitle name={direction.title} key={key} image={image}/>
+        <SuggestTitle name={direction.title} key={key} image={direction.imageSrc}/>
     )
   })
   return (

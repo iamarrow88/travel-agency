@@ -4,7 +4,7 @@ function SuggestTitle({ name, image }){
         {/*<picture className="w-full h-full relative z-10">
           <source srcSet="./directions/usa.jpg"/>
         </picture>*/}
-        <img src="./directions/usa.jpg" alt=""/>
+        <img src={image} alt=""/>
         <div className="absolute top-0 left-0 flex justify-center items-center w-full h-full z-20 text-white text-5xl font-black">{name}</div>
       </a>
   )
